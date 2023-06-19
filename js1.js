@@ -186,10 +186,114 @@
 // const father = new Person("Abdul","khader",50,"black");
 // const mother = new Person("Nadeera","nk",43,"brown");
 // console.log(father.lanuage);
-const site = "w3schools";
-let txt = "";
-for (const x of site){
-  txt += x ;
+// const site = "w3schools";
+// let txt = "";
+// for (const x of site){
+//   txt += x ;
+// }
+// console.log(txt);
+
+// const student = {
+//   firstName : "Ashik",
+//   lastName : "pa",
+//   age : 25,
+//   fullName : function(){
+//    return this.firstName +  "" + this.lastName;
+//   }
+// }
+//  const student1 = {
+//   firstName : "Afsal",
+//   lastName : "pa",
+// }
+// let fullName = student.fullName.call(student1);
+// console.log(fullName);
+// class car {
+//   constructor(name, year){
+//     this.name  = name;
+//     this.year = year;
+//   }
+
+// age(){
+//   const date = new date();
+//   return date.getfullyear()-this.year;
+// }
+// }
+// const garage = new car("mustang",2018);
+// console.log(`my car is ford ${garage.name} `+`and it is ${garage.age} year old`);
+// class car{
+//   constructor(sport){
+//     this.carName = sport;
+//   }
+
+// show(){
+//   return `i have ${this.carName}`
+// }
+// }
+// console.log(car);
+// 
+// let i = 1;
+// while( i <= 5){
+//   console.log(i);
+//   i++;
+// }
+// let i = 10;
+// while( i >= 1){
+//   console.log(i);
+//   i--;
+// }
+// let i = 1;
+// while(i <= 50){
+//   i%2==0&&console.log(i);
+//   i++;
+// }
+// let i = 1;
+// sum = 0
+// while(i <= 10){
+//   sum += i
+//   i++;
+// }
+// console.log(sum);
+// class car {
+//   constructor(name){
+//     this.name = name;
+//   }
+//   static hello(x){
+//     return "My car is" + " "+ x.name;
+//   }
+// }
+// const myCar = new car("mustang");
+// // console.log(myCar.hello());
+// console.log(car.hello(myCar));
+// 
+// setInterval(myFunction, 1000);
+//  function myFunction(){
+//   let d = new Date();
+//   console.log(
+//     d.getHours() + " :"+
+//     d.getMinutes() + " :"+
+//     d.getSeconds() );
+// }
+function myDisplayer(some){
+  console.log(some);
 }
-console.log(txt);
+let myPromise = new Promise(function(myResolve,myReject){
+  let x = 1;
+  // producing code
+  if(x == 0){
+    myResolve("OK");
+  }
+  else{
+    myReject("Error");
+  }
+});
+  // connecting code
+myPromise.then(
+  function(value){
+    myDisplayer(value);},
+    function(error){
+      myDisplayer(error);}
+  );
+
+
+
 
