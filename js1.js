@@ -273,27 +273,73 @@
 //     d.getMinutes() + " :"+
 //     d.getSeconds() );
 // }
+// function myDisplayer(some){
+//   console.log(some);
+// }
+// let myPromise = new Promise(function(myResolve,myReject){
+//   let x = 1;
+//   // producing code
+//   if(x == 0){
+//     myResolve("OK");
+//   }
+//   else{
+//     myReject("Error");
+//   }
+// });
+//   // connecting code
+// myPromise.then(
+//   function(value){
+//     myDisplayer(value);},
+//     function(error){
+//       myDisplayer(error);}
+//   );
+
+
+// palindrome number
+// let num = 123;
+// console.log(num);
+// function reverNum(){
+//   return  Number(num.toString().split("").reverse().join(""))
+// }
+
+// console.log(reverNum(num)
+// input = 321;
+// let num = input;
+// str = ""
+// while(num > 0){
+//  lastNum =  num % 10;
+//  str += lastNum;
+//  num = Math.floor(num / 10)
+
+// }
+// // console.log(str);
+// console.log(input == str ?`${input} is a palindrome number)
+// let num = 2;
+// str = "";
+//  sum = 0;
+// for (i = 0; i < num; i++){
+//   str += num;
+//   sum += Number(str)
+//   console.log(sum);
+
+// }
+// Amstrong
+// num = 4;
+// sum = 0;
+// str =""
+// for(i = 0; i < num; i++){
+//   str += num
+//   sum += Number(str)
+// }
+// console.log(sum);
+// async
 function myDisplayer(some){
   console.log(some);
 }
-let myPromise = new Promise(function(myResolve,myReject){
-  let x = 1;
-  // producing code
-  if(x == 0){
-    myResolve("OK");
-  }
-  else{
-    myReject("Error");
-  }
-});
-  // connecting code
-myPromise.then(
-  function(value){
-    myDisplayer(value);},
-    function(error){
-      myDisplayer(error);}
-  );
-
-
-
+ async function myFunction(){
+  return "Hello world";
+}
+myFunction().then(
+  function(value){myDisplayer(value);}
+)
 
