@@ -333,13 +333,24 @@
 // }
 // console.log(sum);
 // async
-function myDisplayer(some){
-  console.log(some);
-}
- async function myFunction(){
-  return "Hello world";
-}
-myFunction().then(
-  function(value){myDisplayer(value);}
-)
-
+// function myDisplayer(some){
+//   console.log(some);
+// }
+//  async function myFunction(){
+//   return "Hello world";
+// }
+// myFunction().then(
+//   function(value){myDisplayer(value);}
+// )
+// const prompt = require(`prompt-sync`)({sigint:true})
+// const userInput = prompt("Enter yur number")
+// let exp = Number(userInput)
+// num = 1;
+// min = 8;
+// up = 36;
+// while(num <= up)
+// {
+//   if(min <= num**exp && num**exp <= up){
+//     console.log(num);
+//   }
+// }
