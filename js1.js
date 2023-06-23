@@ -354,3 +354,30 @@
 //     console.log(num);
 //   }
 // }
+// const para = document.createElement("p");
+// const text = document.createTextNode("new paragraph")
+// para.appendChild(text);
+// const elemt = document.getElementById("id1");
+// elemt.appendChild(para);
+// for(row = 1; row <= 5; row++){
+//     str =""
+//     for(col = 5; col >= row; col--){
+//         str += "* "
+//     }
+//     console.log(str);
+
+// }
+for(i = 1; i <= 4; i++){
+    str ="";
+    for(j =1; j<=7; j++){
+        if(i==4 || i + j == 5|| j-i ==3){
+            str += "*";
+        }
+        else{
+            str += " ";
+        }
+    }
+    console.log(str);
+}
+
+
