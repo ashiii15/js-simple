@@ -17,14 +17,30 @@
 // .then(x => x.text())
 // .then(y =>
 //     document.getElementById("demo").innerHTML = y)
-const x = document.getElementById("demo");
-function getPosition(){
-    if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(current)}
-        else{
-            X.innerHTML=  "Gelolocation is not supported";
+// const x = document.getElementById("demo");
+// function getPosition(){
+//     if(navigator.geolocation){
+//         navigator.geolocation.getCurrentPosition(current)}
+//         else{
+//             X.innerHTML=  "Gelolocation is not supported";
+//         }
+//     }
+//     function current(position){
+//       x.innerHTML= "longitude:" + this.coords.longitude + "lattitude :" + this.coords.longitude
+//     }
+function showCustomer(str){
+    if( str.length == 0){
+        document.getElementById("hint").innerHTML = "";
+        return;
+    }
+    else{
+        const xhttp =  new XMLHttpRequest()//creat xmlhttprequest object
+        xhttp.onload = function(){         //ceate a callback function
+            document.getElementById("hint").innerHTML = 
+            this.responseText;
         }
     }
-    function current(position){
-      x.innerHTML= "longitude:" + this.coords.longitude + "lattitude :" + this.coords.longitude
-    }
+    xhttp.open("GET","gethint.php?q="+str);//send xmlhttp request
+    xhttp.send();
+    
+}
