@@ -21,15 +21,15 @@
 //     }
 // }
 // console.log(checker());
-const prompt = require("prompt-sync")({sigint:true})
-let useInp = prompt("enter a number")
-let b = useInp
-function gmailChecker(){
-    if(b.endsWith("@gmail.com")){
-        console.log("It is a valid gmail address");
-    }
-        else{
-            console.log("It is not a valid gmail address");
-    }
-}
-gmailChecker();
+// const prompt = require("prompt-sync")({sigint:true})
+// let useInp = prompt("enter a number")
+// let b = useInp
+// function gmailChecker(){
+//     if(b.endsWith("@gmail.com")){
+//         console.log("It is a valid gmail address");
+//     }
+//         else{
+//             console.log("It is not a valid gmail address");
+//     }
+// }
+// gmailChecker();
