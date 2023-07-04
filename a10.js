@@ -10,21 +10,27 @@ employee = [
     [1008,'Nihaan','developer','TVM',25000,3]
 ]
 //1. print all employee name
+//  employee.forEach((emp)=>console.log(emp[1]))
 
 // for(let emp of employee){
 //     console.log(emp[1]);
 // }
+// employee.forEach(emp=>console.log(emp[1]))
 //2.print total number of employee
 // console.log(employee.length);
-
+// console.log(employee.length);
 
 //3. print developer employee details
+empl = employee.filter(emp=>emp[2]=="developer").forEach(emp=>console.log(emp[1]))
+
 // let developer;
 // for(let emp of employee){
 //     if(emp[2] == "developer"){
 //         console.log(emp);
 //     }
 // }
+// developer = employee.filter(emp=> emp[2]=="developer").forEach(emp=>console.log(emp[1]))
+// console.log(developer);
 
 
 //4. print employee whose salary > 30000
@@ -33,6 +39,8 @@ employee = [
 //         console.log(emp);
 //     }
 // }
+// emplo = employee.filter(emp=> emp[4] > 30000).forEach(emp=>console.log(emp[1]))
+
 
 //5. print details of employee Laisha
 // for(let emp of employee){
@@ -41,10 +49,12 @@ employee = [
 //     }
 // }
 
+
 //6. Sort employee based on their salary in descending order
     // console.log(emp);
-    // const sorted = employee.sort((a,b)=>a[4]-b[4])
+    // const sorted = employee.sort((a,b)=>b[4]-a[4])
     // console.log(sorted)
+    // employee.sort((a,b)=>b[4]-a[4]).forEach(emp=>console.log(emp[1]))
 
 //7. Sort employee based on their experience in ascending order
 // const sort = employee.sort((a,b)=>a[5]-b[5]);
@@ -52,6 +62,6 @@ employee = [
 
 
 //8. Sort employee based on their salary in descending order
-const sort = employee.sort((a,b)=>b[4]-a[4])
-console.log(sort);
+// const sort = employee.sort((a,b)=>b[4]-a[4])
+// console.log(sort);
 
