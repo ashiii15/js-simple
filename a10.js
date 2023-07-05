@@ -9,6 +9,26 @@ employee = [
     [1007,'Shayan','developer','kochi',30000,3],
     [1008,'Nihaan','developer','TVM',25000,3]
 ]
+//wap employee with higest salary
+let higest = employee.reduce((emp1,emp2)=>emp1[4] > emp2[4] ? emp1:emp2);
+console.log(higest[1]);
+
+
+
+
+
+
+// highest = employee.reduce((emp1,emp2)=>emp1[4] > emp2[4]?emp1:emp2)
+// console.log(highest[1]);
+//wap employee with lowest salary
+// smallest = employee.reduce((emp1,emp2)=>emp1[4] < emp2[4]?emp1:emp2)
+// console.log(smallest[1]);
+// smallestFirst = employee.reduceRight((emp1,emp2)=>emp1[4] < emp2[4]?emp1:emp2)
+// console.log(smallestFirst[1]);
+//find the total salary given by the number
+// let total = employee.map(emp=>emp[4]).reduce((emp1,emp2)=>emp1 + emp2)
+// console.log(total);
+
 //1. print all employee name
 //  employee.forEach((emp)=>console.log(emp[1]))
 
@@ -21,7 +41,7 @@ employee = [
 // console.log(employee.length);
 
 //3. print developer employee details
-empl = employee.filter(emp=>emp[2]=="developer").forEach(emp=>console.log(emp[1]))
+// empl = employee.filter(emp=>emp[2]=="developer").forEach(emp=>console.log(emp[1]))
 
 // let developer;
 // for(let emp of employee){
@@ -34,6 +54,12 @@ empl = employee.filter(emp=>emp[2]=="developer").forEach(emp=>console.log(emp[1]
 
 
 //4. print employee whose salary > 30000
+
+// a = employee.filter(emp=>emp[4]>30000).forEach(emp=>console.log(emp[1]))
+
+
+
+
 // for(let emp of employee){
 //     if(emp[4] > 30000){
 //         console.log(emp);
