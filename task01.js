@@ -26,28 +26,27 @@ covid_data = [
 // console.log(death[1]);
 
 //4. sort data with +ve case in descending order
-let sort = covid_data.sort((a,b)=>b[2]-a[2])
-console.log(sort);
+// let sort = covid_data.sort((a,b)=>b[2]-a[2])
+// console.log(sort);
 
 
 
-//5. is district with +ve cases > 15000
+//5. 
+//  console.log(`is district with +ve cases > 15000`, covid_data.some(dis=>dis[2]>15000)?`yes`:`no`);
+
+
 
 //6. sort data with 1st dose vaccine
+// sort = covid_data.forEach(dis=>console.log(`${dis[1]}-${dis[5]}`))
 
 //7. Print Thrissur details
-//  for(let x of covid_data){
-//     console.log(x);
-//     for(let y of x){
-//         console.log(y[2]);
-//     }
-    
-//     }
- 
+// console.log(covid_data.find(d=>d[1]=="Thrissur")); 
 
 //8. Print total number of positive cases
 
 //9. Print total number of curred cases
-
+// console.log(covid_data.map(dis=>dis[4]).reduce((c1,c2)=>c1+c2));
 //10. Print curred cases in Idukki
+idukki = (covid_data.find(dis=>dis[1]=="Idukki"));
+console.log(`${idukki[1]} curred cases are ${idukki[4]}`);
 
